@@ -169,7 +169,7 @@ function Header() {
                 navigate('/home');
             } else {
                 // alert('Erro on authStateChange:: ', user);
-                navigate('/');
+                // navigate('/');
             }
         });
     }, [userName])

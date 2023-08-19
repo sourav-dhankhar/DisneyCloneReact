@@ -3,6 +3,7 @@ import './App.css';
 import Root from "./components/Root";
 import Login from "./components/Login";
 import Home from "./components/Home";
+import Detail from "./components/Detail";
 
 const router = createBrowserRouter([
   {
@@ -10,7 +11,8 @@ const router = createBrowserRouter([
     element: <Root></Root>,
     children : [
       {index: true, element: <Login></Login>},
-      {path: 'home', element: <Home></Home>}
+      {path: 'home', element: <Home></Home>},
+      {path: 'detail/:id', element: <Detail></Detail>}
     ]
   }
 ])

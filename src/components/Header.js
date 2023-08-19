@@ -168,7 +168,7 @@ function Header() {
                 setUser(user);
                 navigate('/home');
             } else {
-                alert('Erro on authStateChange:: ', user);
+                // alert('Erro on authStateChange:: ', user);
                 navigate('/');
             }
         });
